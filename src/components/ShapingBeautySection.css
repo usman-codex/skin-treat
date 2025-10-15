@@ -1,0 +1,45 @@
+.shaping-beauty-wrapper {
+  padding: 5rem 0;
+  background-color: #fff;
+}
+
+.shaping-heading {
+  font-family: serif;
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 3rem;
+}
+
+.shaping-content {
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.9;
+  text-align: center;
+}
+
+.shaping-content p {
+  margin-bottom: 1.5rem;
+}
+
+.shaping-content a {
+  color: #333;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.shaping-content a:hover {
+  color: #00bbb4;
+}
+
+@media (max-width: 768px) {
+  .shaping-beauty-wrapper {
+    padding: 3rem 1.5rem;
+  }
+  .shaping-heading {
+    font-size: 2.2rem;
+  }
+  .shaping-content {
+    font-size: 1rem;
+  }
+}

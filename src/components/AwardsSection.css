@@ -1,0 +1,68 @@
+.awards-section-wrapper {
+  padding: 5rem 0;
+  background-color: white;
+}
+
+.awards-heading {
+  font-family: serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 3rem;
+}
+
+.scroller {
+  width: 100%;
+  overflow: hidden;
+  -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller-inner {
+  display: flex;
+  flex-wrap: nowrap;
+  width: fit-content;
+  animation: scroll 40s linear infinite;
+}
+
+.scroller-inner li {
+  list-style: none;
+  margin-right: 3rem;
+}
+
+.scroller-inner img {
+  height: 120px;
+  width: auto;
+}
+
+.scroller:hover .scroller-inner {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .awards-section-wrapper {
+    padding: 3rem 0;
+  }
+
+  .awards-heading {
+    font-size: 1.8rem;
+    padding: 0 1rem;
+  }
+
+  .scroller-inner li {
+    margin-right: 2rem;
+  }
+
+  .scroller-inner img {
+    height: 80px;
+  }
+}

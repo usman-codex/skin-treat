@@ -1,0 +1,76 @@
+/* src/components/Header.css */
+
+/* Default View (Mobile First) */
+.desktop-view-wrapper { display: none; }
+.mobile-header { display: block; }
+
+/* Desktop View (992px se upar) */
+@media (min-width: 992px) {
+  .desktop-view-wrapper { display: block; }
+  .mobile-header { display: none; }
+}
+
+/* Desktop Top Bar Styles */
+.desktop-header-top {
+  background-color: white;
+  padding: 0.5rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.header-section { display: flex; align-items: center; }
+.logo-img { height: 95px; }
+.contact-link { text-decoration: none; color: #333; font-weight: 600; display: flex; align-items: center; }
+.whatsapp-icon { color: #25D366; font-size: 1.5rem; margin-right: 8px; }
+.btn-custom-primary { background-color: #00bbb4; color: white; font-weight: bold; padding: 0.75rem 1.5rem; border-radius: 50px; border: none; transition: background-color 0.3s ease; white-space: nowrap; }
+.btn-custom-primary:hover { background-color: #00a19a; color: white; }
+
+/* Desktop Navigation Bar Styles */
+.desktop-navbar {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+a.nav-link{
+    color: black;
+}
+a.nav-link:hover{
+    color: #00bbb4 !important;
+}
+/* YAHAN COLOR CHANGE KIYA GAYA HAI */
+.desktop-navbar .nav-item-custom a.nav-link,
+.desktop-navbar .nav-item-custom a.dropdown-toggle {
+  color: #333 !important; /* Default Color (Dark Grey/Black) */
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 0.5rem 1.5rem !important;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+}
+.desktop-navbar .nav-item-custom a:hover {
+  color: #00bbb4 !important; /* Hover Color (Blue) */
+}
+
+/* Mobile Header Styles */
+.mobile-header {
+  background-color: white;
+  padding: 1rem;
+  position: relative;
+  text-align: center;
+}
+.hamburger-btn { position: absolute; top: 50%; right: 1rem; transform: translateY(-50%); background: transparent; border: none; font-size: 2rem; color: #333; }
+.mobile-logo img { height: 60px; }
+.mobile-header-bottom { margin-top: 1rem; }
+
+/* Mobile Slide-in Menu Styles */
+.mobile-menu { position: fixed; top: 0; right: 0; width: 85%; max-width: 400px; height: 100vh; background: white; box-shadow: -5px 0 15px rgba(0,0,0,0.1); transform: translateX(100%); transition: transform 0.3s ease-in-out; z-index: 1001; padding: 4rem 2rem; }
+.mobile-menu.open { transform: translateX(0); }
+.mobile-menu .nav-link, .mobile-menu .dropdown-toggle { font-size: 1.2rem; padding: 0.8rem 0; border-bottom: 1px solid #eee; color: #333 !important; }
+.mobile-menu .dropdown-menu { border: none; }
+.close-btn { position: absolute; top: 1rem; right: 1rem; background: transparent; border: none; font-size: 1.8rem; color: #333; }
+.mobile-menu-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.4); opacity: 0; visibility: hidden; transition: opacity 0.3s, visibility 0.3s; z-index: 1000; }
+.mobile-menu-overlay.open { opacity: 1; visibility: visible; }
