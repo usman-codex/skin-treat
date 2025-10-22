@@ -43,6 +43,7 @@
   overflow: hidden;
   line-height: 0; /* Extra space khatam karne ke liye */
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  height : 500px;
 }
 
 /* Responsive Styles */
@@ -51,6 +52,7 @@
     text-align: center;
     margin-bottom: 3rem;
   }
+  
 }
 
 @media (max-width: 767.98px) {
@@ -63,4 +65,7 @@
   .smile-paragraph {
     font-size: 1rem;
   }
+ .image-compare-container{
+  height: 50%;
+ }
 }
