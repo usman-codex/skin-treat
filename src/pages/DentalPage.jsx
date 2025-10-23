@@ -4,6 +4,9 @@ import React from 'react';
 import DentalHero from '../components/DentalHero.jsx';
 import DentalIntro from '../components/DentalIntro.jsx';
 import SmileGallery from '../components/SmileGallery.jsx';
+import DentalServicesGrid from '../components/DentalServicesGrid.jsx';
+import TestimonialSlider from '../components/TestimonialSlider.jsx';
+import DentalTeam from '../components/DentalTeam.jsx';
 
 const DentalPage = () => {
   return (
@@ -11,6 +14,9 @@ const DentalPage = () => {
       <DentalHero />
       <DentalIntro />
       <SmileGallery />
+      <DentalServicesGrid />
+      <TestimonialSlider />
+      <DentalTeam />
     </>
   );
 };

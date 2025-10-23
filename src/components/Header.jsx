@@ -36,7 +36,7 @@ const Header = () => {
             <Nav.Link as={Link} to="/" className="nav-item-custom">HOME</Nav.Link>
             
             <Nav.Link as={Link} to="/dental" className="nav-item-custom">DENTAL</Nav.Link>
-            <Nav.Link as={Link} to="/plastic-surgery" className="nav-item-custom">PLASTIC-SURGERY</Nav.Link>
+            <Nav.Link as={Link} to="/dna-analysis" className="nav-item-custom">DNA ANALYSIS</Nav.Link>
             <NavDropdown title="AESTHETICS" id="desktop-aesthetics-dropdown" className="nav-item-custom">
               <NavDropdown.Item as={Link} to="/aesthetics/cosmetic">Cosmetic Injectables</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/aesthetics/skincare">Skin Care</NavDropdown.Item>
@@ -68,7 +68,7 @@ const Header = () => {
           <Nav.Link as={Link} to="/" onClick={() => setMenuOpen(false)}>Home</Nav.Link>
           
           <Nav.Link as={Link} to="/dental" onClick={() => setMenuOpen(false)}>Dental</Nav.Link>
-          <Nav.Link as={Link} to="/plastic-surgery" onClick={() => setMenuOpen(false)}>Plastic-Surgery</Nav.Link>
+          <Nav.Link as={Link} to="/dna-analysis" onClick={() => setMenuOpen(false)}>DNA ANALYSIS</Nav.Link>
           <NavDropdown title="Aesthetics" id="mobile-aesthetics-dropdown">
             <NavDropdown.Item as={Link} to="/aesthetics/cosmetic" onClick={() => setMenuOpen(false)}>Cosmetic Injectables</NavDropdown.Item>
             <NavDropdown.Item as={Link} to="/aesthetics/skincare" onClick={() => setMenuOpen(false)}>Skin Care</NavDropdown.Item>

@@ -10,6 +10,7 @@ import ScrollToTop from './components/ScrollToTop.jsx';
 
 import HomePage from './pages/HomePage.jsx';
 import DentalPage from './pages/DentalPage.jsx';
+import DnaAnalysisPage from './pages/DnaAnalysisPage.jsx'; /
 
 import './App.css';
 
@@ -42,6 +43,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/dental" element={<DentalPage />} />
+          <Route path="/dna-analysis" element={<DnaAnalysisPage />} />
         </Routes>
       </main>
 
