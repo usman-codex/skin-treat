@@ -1,0 +1,85 @@
+.dna-specialist-wrapper {
+  padding: 6rem 0;
+  background-color: #4ddfbb;
+}
+
+.specialist-profile-card {
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  padding: 1rem;
+}
+
+.specialist-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.specialist-info {
+  padding: 1.5rem 0.5rem 0.5rem 0.5rem;
+  color: #555;
+}
+
+.specialist-info h3 {
+  color: #00bbb4;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.specialist-info p {
+  margin-bottom: 0.5rem;
+  line-height: 1.7;
+}
+
+.specialist-details {
+  padding-left: 2rem;
+  color: #555;
+}
+
+.specialist-details h4 {
+  font-weight: 600;
+  color: #333;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.specialist-details p {
+  line-height: 1.9;
+  margin-bottom: 1.5rem;
+}
+
+.specialist-book-btn {
+  background-color: white;
+  border: 1px solid #ddd;
+  color: #333;
+  padding: 0.9rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.specialist-book-btn:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 991.98px) {
+  .specialist-profile-card {
+    margin-bottom: 3rem;
+  }
+  .specialist-details {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .dna-specialist-wrapper {
+    padding: 4rem 1.5rem;
+  }
+}
