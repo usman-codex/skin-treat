@@ -1,0 +1,80 @@
+.hydrafacial-wrapper {
+  background-color: #fff;
+  min-height: 200vh;
+}
+
+.top-banner {
+  background-color: #e9ecef;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.top-banner-h1, .top-banner-p {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.top-banner-h1.is-visible { opacity: 1; transform: translateY(0); transition-delay: 0.2s; }
+.top-banner-p.is-visible { opacity: 1; transform: translateY(0); transition-delay: 0.4s; }
+
+.top-banner-h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.top-banner-p {
+  font-size: 1.2rem;
+  color: #00bbb4;
+  font-style: italic;
+}
+
+.main-content {
+  padding: 0;
+}
+
+.text-col {
+  background-color: #e9ecef;
+  padding: 4rem;
+}
+
+.text-content > * {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.text-content.is-visible > * {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.text-content h2 { font-weight: 700; }
+.text-content .subtitle { color: #00bbb4; font-weight: 600; font-size: 1.2rem; }
+.text-content p, .text-content li { color: #555; line-height: 1.9; margin-bottom: 1rem; }
+.text-content ul { padding-left: 20px; }
+.book-btn { background-color: #00bbb4; color: white; border: none; padding: 0.8rem 1.5rem; border-radius: 50px; font-weight: 600; transition: all 0.3s ease; }
+.book-btn:hover { background-color: #00a19a; transform: translateY(-3px); }
+
+/* Animation Delays */
+.text-content.is-visible h2 { transition-delay: 0.3s; }
+.text-content.is-visible .subtitle { transition-delay: 0.4s; }
+.text-content.is-visible p { transition-delay: 0.5s; }
+.text-content.is-visible ul { transition-delay: 0.6s; }
+.text-content.is-visible .book-btn { transition-delay: 0.7s; }
+
+.image-col {
+  background-image: url('../assets/hydrafacial-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+}
+
+@media (max-width: 991.98px) {
+  .text-col { padding: 3rem; }
+  .image-col { min-height: 50vh; }
+}
+@media (max-width: 767.98px) {
+  .top-banner { padding: 2rem 1rem; }
+  .top-banner-h1 { font-size: 2rem; }
+  .text-col { padding: 2rem; }
+}
