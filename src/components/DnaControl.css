@@ -1,0 +1,66 @@
+.dna-control-wrapper {
+  padding: 6rem 0;
+  background-color: #fff;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+.control-card-col {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.control-card-col.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.control-card {
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.control-icon-container {
+  font-size: 3rem;
+  color: #00bbb4;
+  margin-bottom: 2rem;
+}
+
+.control-text {
+  color: #555;
+  line-height: 1.8;
+  flex-grow: 1;
+  margin-bottom: 2rem;
+}
+
+.control-button {
+  background-color: #00bbb4;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.control-button:hover {
+  background-color: #00a19a;
+}
+
+@media (max-width: 991.98px) {
+  .control-card {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .dna-control-wrapper {
+    padding: 4rem 1.5rem;
+    min-height: auto;
+  }
+}

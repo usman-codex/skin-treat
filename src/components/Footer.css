@@ -1,0 +1,130 @@
+.footer-wrapper {
+  padding: 6rem 0;
+  background-color: #f7f2ec;
+  background-image: url('../assets/bg-welcome.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #555;
+  width: 100%;
+}
+
+.footer-heading {
+  font-family: serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.timings-list {
+  list-style: none;
+  padding-left: 0;
+  max-width: 300px;
+}
+
+.timings-list li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.footer-col p a {
+  color: #555;
+  text-decoration: underline;
+}
+
+.footer-col p a:hover {
+  color: #333;
+}
+
+.footer-form input, .footer-form textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #c5b9ab;
+  padding: 0.8rem 0;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.footer-form input:focus, .footer-form textarea:focus {
+  outline: none;
+  border-bottom-color: #00bbb4;
+}
+
+.submit-btn {
+  background-color: #00bbb4;
+  color: white;
+  border: none;
+  padding: 0.8rem 2.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 187, 180, 0.3);
+  margin-top: 1rem;
+}
+
+.submit-btn:hover {
+  background-color: #00a19a;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 187, 180, 0.4);
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.contact-icon {
+  font-size: 1.5rem;
+  margin-right: 0.8rem;
+}
+
+.contact-icon.whatsapp { color: #25D366; }
+.contact-icon.phone { color: #00bbb4; }
+.email-info { margin-top: 1rem; font-size: 1rem;}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #333;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #00bbb4;
+}
+
+@media (max-width: 991.98px) {
+  .footer-wrapper {
+    padding: 4rem 1.5rem;
+  }
+  .footer-heading {
+    font-size: 1.6rem;
+  }
+  .timings-list {
+    max-width: none;
+  }
+  .footer-col {
+    text-align: center;
+  }
+  .timings-list li, .contact-info, .social-icons {
+    justify-content: center;
+  }
+}

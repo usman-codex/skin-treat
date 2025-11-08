@@ -1,0 +1,66 @@
+.dna-benefits-wrapper {
+  padding: 6rem 0;
+  background-color: #f7f2ec;
+}
+
+.benefits-heading {
+  font-family: serif;
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: #333;
+}
+
+.benefits-subheading {
+  font-family: serif;
+  font-size: 1.8rem;
+  font-style: italic;
+  color: #555;
+  margin-top: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.benefit-item.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.plus-icon {
+  flex-shrink: 0;
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  color: #00bbb4;
+}
+
+.benefit-item p {
+  margin: 0;
+  color: #555;
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .dna-benefits-wrapper {
+    padding: 4rem 1.5rem;
+  }
+  .benefits-heading {
+    font-size: 2.2rem;
+  }
+  .benefits-subheading {
+    font-size: 1.5rem;
+  }
+}
